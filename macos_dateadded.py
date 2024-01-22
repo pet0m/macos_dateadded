@@ -1,3 +1,5 @@
+__version__ = '0.1'
+__all__ = [ 'getDateAdded', 'setDateAdded' ]
 #############################################################################################
 # There is a need to update (migrate) file's DateAdded timestamp.
 # DateAdded timestamp is a timestamp when a file or directory was added to the directory. 
@@ -8,7 +10,6 @@
 # based on: https://stackoverflow.com/a/73616027
 # based on: https://apple.stackexchange.com/a/446258
 #############################################################################################
-__all__ = [ 'getDateAdded', 'setDateAdded' ]
 
 from ctypes import (
     Structure, get_errno, byref, sizeof, CDLL, POINTER,
